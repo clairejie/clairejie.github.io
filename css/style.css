@@ -1,0 +1,715 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+#navbar {
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  background-color: black;
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
+  /* box-shadow: 3px 3px 5px 1px darkslategrey; */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  /* padding: 1rem; */
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  padding: 0.5rem 6rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: lightgray;
+  font-size: 1.25rem;
+}
+/* ==================================== */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h5 {
+  color: white;
+  font-weight: bold;
+  /* margin: auto; */
+}
+
+p {
+  color: white;
+  font-size: 1rem;
+  line-height: 2;
+  margin: 10px 0 10px 0;
+  padding: 30px 0 30px 0;
+  /* margin: auto; */
+}
+
+/* =================================== */
+
+.living-room {
+  position: relative;
+  width: 100vw;
+}
+
+#lying-ani {
+  width: 50vw;
+  position: relative;
+  left: 45vw;
+  top: -100vh;
+  opacity: 0;
+}
+
+#aircon {
+  width: 25vw;
+  position: relative;
+  left: 10vw;
+  top: 75vh;
+}
+
+#date {
+  width: 20vw;
+  position: relative;
+  left: 25vw;
+  top: 50vh;
+  opacity: 0;
+}
+
+#clock {
+  width: 30vw;
+  position: relative;
+  left: 60%;
+  top: 10vh;
+  opacity: 0;
+}
+
+#punch {
+  position: relative;
+}
+
+/* #lightning {
+  width: 100vw;
+  object-fit: cover;
+}
+
+p.whathappen {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  left: 50vw;
+  top: -40vh;
+}
+
+#rain {
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#brain {
+  width: 100vw;
+  /* position: absolute; */
+/* left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#call119 {
+  width: 20vw;
+  position: relative;
+  left: 70vw;
+  top: -50vh;
+} */
+
+#oifrag {
+  width: 50%;
+  position: relative;
+  left: 30%;
+  opacity: 0;
+}
+
+#oioi {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  opacity: 0;
+}
+
+#oispace {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+#doctor {
+  width: 20%;
+  position: absolute;
+  left: 45%;
+  margin-top: 35%;
+  opacity: 0;
+}
+
+#words1 {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  margin-top: 20%;
+  opacity: 0;
+}
+
+#words2 {
+  width: 300px;
+  position: absolute;
+  left: 75%;
+  margin-top: 30%;
+  opacity: 0;
+}
+
+#words3 {
+  width: 400px;
+  position: absolute;
+  left: 15%;
+  margin-top: 50%;
+  opacity: 0;
+}
+
+#words4 {
+  width: 700px;
+  position: absolute;
+  left: 25%;
+  margin-top: 10%;
+}
+
+#family-section {
+  width: 100%;
+}
+
+.quarterimg {
+  width: 25%;
+}
+
+@keyframes fade-from-bottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-from-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#family1 {
+  background-image: url("../assets/ch1/family1.png");
+}
+
+#family2 {
+  background-image: url("../assets/ch1/family2.png");
+}
+
+#family3 {
+  background-image: url("../assets/ch1/family3.png");
+}
+
+#family4 {
+  background-image: url("../assets/ch1/family4.png");
+}
+
+.familyimg {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: 0;
+}
+
+p.decision {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  left: 35%;
+  margin-top: 30%;
+}
+
+#tie {
+  width: 50vw;
+  position: relative;
+  left: 45%;
+  opacity: 0;
+}
+
+#lotus3 {
+  width: 15vw;
+  position: relative;
+  left: 35vw;
+}
+
+#lotus4 {
+  width: 15vw;
+  position: relative;
+  left: 10vw;
+}
+
+#wf-section {
+  position: relative;
+  height: 150vh;
+}
+
+#wf1 {
+  width: 40vw;
+  position: absolute;
+  left: 10%;
+  top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#wf2 {
+  width: 45vw;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  opacity: 0;
+}
+
+#wf3 {
+  width: 50vw;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  opacity: 0;
+}
+
+#wfmedal,
+#wftime,
+#wfcoffin {
+  opacity: 0;
+}
+
+/* Funeral section ==================================================== */
+
+#funeral {
+  background: black;
+  background-image: url("../assets/ch3/funeral.png");
+  background-size: 80%;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+#worship {
+  width: 15vw;
+  position: absolute;
+  left: 50%;
+  top: -45px;
+  opacity: 0;
+}
+
+#kowtow {
+  width: 15vw;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  opacity: 0;
+}
+
+#tear {
+  width: 15vw;
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  opacity: 0;
+}
+
+#funeral-text {
+  background-color: #000;
+}
+
+#paint {
+  position: relative;
+  z-index: -1;
+  background-color: #000;
+}
+
+/* #wine-party1 {
+  background-image: url("../assets/ch3/paintex.png");
+}
+
+#wine-party2 {
+  background-image: url("../assets/ch3/paintex_color.png");
+}
+
+#wine-party3 {
+  background-image: url("../assets/ch3/paintex_people.png");
+}
+
+#wine-party4 {
+  background-image: url("../assets/ch3/transcolor.png");
+}
+
+#wine-party5 {
+  background-image: url("../assets/ch3/wineparty.png");
+}
+
+#wine-party6 {
+  background-image: url("../assets/ch3/glass.png");
+}
+
+#wine-party7 {
+  background-image: url("../assets/ch3/glasscolor.png");
+} */
+
+/*  ch4 ====================================================================== */
+
+#mountain {
+  width: 55vw;
+  position: relative;
+  left: 45%;
+  opacity: 0;
+}
+
+#road12 {
+  width: 30vw;
+  position: relative;
+  left: 20vw;
+  opacity: 0;
+}
+
+#road3 {
+  width: 30vw;
+  position: relative;
+  left: 50vw;
+  opacity: 0;
+}
+
+#tower {
+  width: 30vw;
+  position: relative;
+  left: -20vw;
+  top: 15vw;
+  opacity: 0;
+}
+
+#uniontable {
+  width: 60vw;
+  position: relative;
+  left: 20vw;
+  opacity: 0;
+}
+
+#hotmilk {
+  width: 10vw;
+  position: relative;
+  left: 50vw;
+}
+
+#bowl {
+  width: 15vw;
+  position: relative;
+  left: 30vw;
+  top: 5vh;
+}
+
+/* 這段改成類似結尾動畫? */
+
+.feet-img {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  position: relative;
+}
+
+#feet {
+  background-image: url("../assets//ch4/feet.png");
+  /* width: 30vw;
+  position: relative;
+  left: 9.5vw; */
+}
+
+#feetcolor1 {
+  background-image: url("../assets//ch4/feetcolor1.png");
+
+  /* width: 30vw;
+  position: absolute;
+  left: 8.5vw; */
+}
+
+#feetcolor2 {
+  background-image: url("../assets//ch4/feetcolor2.png");
+  /* width: 30vw; */
+  /* position: absolute; */
+  /* left: 8.5vw; */
+}
+
+#feetcolor3 {
+  background-image: url("../assets//ch4/feetcolor3.png");
+  /* width: 30vw; */
+  /* position: absolute; */
+  /* left: 8.5vw; */
+}
+
+/* ch5================================== */
+
+#memory {
+  background-image: url("../assets//ch5//memory-3.png");
+  background-position: center;
+  background-size: cover;
+  height: 300vh;
+  position: relative;
+}
+
+#memorywords1 {
+  color: black;
+  width: 30vw;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  opacity: 0;
+}
+
+#memorywords2 {
+  color: black;
+  width: 30vw;
+  position: absolute;
+  right: 20%;
+  bottom: 20%;
+  opacity: 0;
+}
+
+#classroom {
+  width: 80vw;
+  position: relative;
+  left: 10vw;
+  bottom: 10vh;
+  opacity: 0;
+}
+
+#coffin1 {
+  width: 45vw;
+  position: relative;
+  left: 20vw;
+  opacity: 0;
+}
+
+#coffin2 {
+  width: 40vw;
+  position: relative;
+  left: 50vw;
+  opacity: 0;
+}
+
+#incoffin {
+  width: 70vw;
+  position: relative;
+  left: -11vw;
+}
+
+#cardhand {
+  width: 30vw;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  opacity: 0;
+  /* left: 1vw; */
+  /* bottom: 150vh; */
+}
+
+#ending {
+  position: relative;
+  z-index: -2;
+}
+
+.stack-img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* ================================================= */
+.fade-in-from-bottom {
+  animation: fade-from-bottom 1s ease 0s normal both;
+}
+
+.fade-in-from-top {
+  animation: fade-from-top 1s ease 0s normal both;
+}
+
+@keyframes fade-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-from-right {
+  animation: fade-in-from-right 2s ease 0s normal;
+}
+
+@keyframes car-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.car-from-right {
+  animation: car-from-right 2s ease 1s normal;
+}
+
+.fadein1 {
+  animation: fade-from-bottom 1s ease 1s normal both;
+}
+
+.fadein2 {
+  animation: fade-from-bottom 1s ease 2s normal both;
+}
+
+.fadein3 {
+  animation: fade-from-bottom 1s ease 3s normal both;
+}
+
+@keyframes fade-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-from-left {
+  animation: fade-from-left 1s ease 0s normal both;
+}
+
+@keyframes fadingup {
+  from {
+    transform: translateZ(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation: fadingup 2s ease 0s normal both;
+}
+
+/* scrollbar setting ==================================*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fad689;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ================================================= */
+
+/* @keyframes fade-out-to-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.fade-out-to-left {
+  animation: fade-out-to-left 2s ease 2s normal;
+} */
+
+/* 
+@media screen and (max-width: 960px) {
+  h1 {
+    color: orange;
+  }
+
+  .image {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  h1 {
+    color: blue;
+  }
+
+  p {
+    line-height: 2.5;
+  }
+
+  .image {
+    height: 300px;
+  }
+} */
