@@ -12,7 +12,7 @@ $(window).scroll(function () {
 
   //ch1 ==========================================
   // lying-ani ani
-  var lyingImgOffsetTop = $('#lying-ani').offset().top;
+  // var lyingImgOffsetTop = $('#lying-ani').offset().top;
   // console.log('lyingImgOffsetTop', lyingImgOffsetTop);
   if (scrolled > lyingImgOffsetTop - winh / 2) {
     $('#lying-ani').addClass('fade-in-from-bottom');
