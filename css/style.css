@@ -76,13 +76,13 @@ p {
   width: 100vw;
 }
 
-#lying-ani {
+/* #lying-ani {
   width: 50vw;
   position: relative;
   left: 47vw;
   top: -120vh;
   opacity: 0;
-}
+} */
 
 #aircon {
   width: 25vw;
