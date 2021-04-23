@@ -14,9 +14,9 @@ $(window).scroll(function () {
   // lying-ani ani
   // var lyingImgOffsetTop = $('#lying-ani').offset().top;
   // console.log('lyingImgOffsetTop', lyingImgOffsetTop);
-  if (scrolled > lyingImgOffsetTop - winh / 2) {
-    $('#lying-ani').addClass('fade-in-from-bottom');
-  }
+  // if (scrolled > lyingImgOffsetTop - winh / 2) {
+  //   $('#lying-ani').addClass('fade-in-from-bottom');
+  // }
 
   //date ani
   var dateImgOffsetTop = $('#date').offset().top;
